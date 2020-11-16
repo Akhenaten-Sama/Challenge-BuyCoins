@@ -1,0 +1,172 @@
+nav{
+	margin-bottom:2rem;
+	width: auto;
+}
+
+section{
+
+	margin-left:2rem;
+	margin-right: 2rem;
+}
+.navbar {
+	color:rgb(248,255,255);
+	Background:rgb(32, 33, 34);	
+	width: 100%;
+
+
+	.container{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 100%;
+	flex-direction: row;
+	padding-right:2rem;
+	position: sticky;
+	top:0;
+	padding: 1rem;;
+	}
+	
+}
+
+
+.nav-group1{
+ display:flex;
+ font-weight: 600;
+ font-size: 14px !important;
+ line-height: 1.5;
+
+ i{
+	font-size: 2rem;
+	margin-right: 20px;
+	
+}
+ .search-div{
+   input{
+	   width:18vw;
+	   height: 1.8rem;
+	   margin-bottom:0;
+	   padding:0.5rem;
+	   border-radius: 8px;
+	   border:solid 0.2px rgba(255, 255, 255, 0.3);
+	   background-color: rgb(36,41,46);
+       color: #f3f3f3;
+   }
+ }
+	.links{
+		margin: 0;
+		.nav-links{
+			display:flex;
+			flex-direction: row;
+			margin-right:20px;
+		
+			li{
+				margin-left:1rem;
+			}
+		}
+	}
+	
+}
+
+
+
+.nav-group2{
+	display:flex;
+
+	i, img{
+  margin-left:4px;
+	}
+}
+
+.nav-img{
+	margin:left 5px;
+	border-radius:50%;
+	height: 20px;
+	width:  20px;
+}
+	
+.tabs-hr{
+	width:100vw !important;
+	margin: 0;
+	overflow: visible;
+}
+
+.tabs{
+	display: flex;
+	width:60vw;
+	margin-left:vw;
+	margin-top:.5rem;
+	
+	li{
+		margin-left:1.8rem;
+		font-size: 0.875rem;
+		color:rgb(36,41,46);
+	}
+}
+
+
+hr{
+	border: 0;
+	height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.profile{
+	z-index: 43;
+}
+.profile-img{
+	//position: absolute;
+	width:280px;
+	size:280px;
+	border-radius: 50%;
+}
+
+
+
+.main{
+	display: flex;
+}
+
+.repo{
+	width:95%;
+	margin-left:5%;
+	margin-top:2rem;
+
+	.repo-name{
+		color:rgb(18,110,216);
+	}
+}
+
+.lang-color{
+	display: inline-block;
+	width:10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+
+.sub-repo{
+	display:flex;
+	justify-content: space-between;
+
+	div{
+
+		span{
+			span{
+				margin-right: 1rem;
+			}
+		}
+	}
+}
+
+button{
+	width:4.2rem;
+	height: 1.7rem;
+	background: white;
+	border: 0.5px solid #d8d8d6;
+	border-radius: 7px;
+	&:hover{
+		background: #f3f3f3;
+	}
+	transition: all 0.3s;
+}

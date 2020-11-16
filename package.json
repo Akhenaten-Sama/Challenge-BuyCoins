@@ -1,0 +1,34 @@
+{
+	"name": "parcel-starter",
+	"version": "1.0.0",
+	"main": "src/index.html",
+	"license": "MIT",
+	"scripts": {
+		"start": "parcel src/index.html -p 3009 --open",
+		"build:parcel": "parcel build src/index.html",
+		"build": "npm run clean && npm run build:parcel",
+		"clean": "rm -rf dist/*"
+	},
+	"dependencies": {
+		"@github/time-elements": "^3.1.1",
+		"apollo-boost": "^0.4.9",
+		"apollo-cache-inmemory": "^1.6.6",
+		"apollo-link-context": "^1.0.20",
+		"apollo-link-http": "^1.5.17",
+		"c": "^1.1.1",
+		"core-js": "^3.7.0",
+		"env-cmd": "^10.1.0",
+		"g": "^2.0.1",
+		"graphql": "^15.4.0",
+		"re": "^0.1.4",
+		"regenerator-runtime": "^0.13.7"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.6.4",
+		"@babel/preset-env": "^7.6.3",
+		"node-sass": "^4.13.1",
+		"parcel-bundler": "^1.12.4",
+		"parcel-plugin-imagemin": "^3.0.0",
+		"parcel-plugin-svg-sprite": "^1.4.1"
+	}
+}

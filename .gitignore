@@ -1,0 +1,8 @@
+node_modules
+dist
+.env
+.*
+!/.gitignore
+!/.babelrc
+yarn-error.log
+yarn.lock
