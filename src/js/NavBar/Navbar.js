@@ -1,5 +1,13 @@
 const Navbar = () => {
     const img = "https://avatars2.githubusercontent.com/u/65839844?u=feed274b8c188865437b0f7e82976cf347c4cfa6&v=4"
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
 	const template = `
 <nav class='navbar'>
 <div class='container'>
@@ -29,6 +37,21 @@ const Navbar = () => {
     <i class="fas fa-caret-down"></i>
     </div>
     </div>
+
+    
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
      </nav>
     `;
 

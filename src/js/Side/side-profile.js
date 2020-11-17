@@ -34,20 +34,26 @@ const Side = async() => {
     <section class='main' >
     <div class='profile'>
     <img class='profile-img' src=${avatarUrl}>
-    <h1>${name}</h1>
-    <p>${login}</p>
-    <h4>${bio}</h4>
+    <div class='profile-name'>
+    <h1>
+    <span class='block'>${name}</span>
+    <span class='block grey-text'>${login}</span>
+    </h1>
+    <p>${bio}</p>
+    </div>
+
     </div>
 
     <header>
-    <ul class='tabs'>
+    <ul class='tabs sticky'>
     <li><i class="fa fa-book-open"></i>    Overview</li>
     <li><i class="far fa-clipboard"></i>    Repositories 645</li>
     <li>Projects</li>
     <li>Packages</li>
     </ul>
-    <hr class='tabs-hr'>
-    <div class="repo"></div>
+    <div class="repo border">
+    <input class='repo-search' type='search' placeholder='Find a repository...'>
+    </div>
     </header>
       
       
