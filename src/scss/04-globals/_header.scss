@@ -15,6 +15,7 @@ nav{
 
 	.container{
 	display: flex;
+	overflow: hidden;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	width: 100%;
@@ -90,8 +91,22 @@ nav{
 .nav-group2{
 	display:flex;
 
+	i.fa-bell{
+		@media screen and (max-width: 786px) {
+			display:block;
+			transform: translateX(-2rem);
+	
+		
+		}
+	}
+
 	i, img{
   margin-left:4px;
+  @media screen and (max-width: 786px) {
+	display:none;
+
+
+}
 	}
 }
 
@@ -124,7 +139,7 @@ nav{
 	padding-left: 25%;
 	@media screen and (max-width: 786px) {
 		overflow: scroll;
-		margin-left:5%;
+		padding-left: 5%;
 		
 	
 	}

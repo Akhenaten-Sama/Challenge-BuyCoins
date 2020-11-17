@@ -2,9 +2,18 @@ a {
 	color: lime;
 }
 
+h1{
+	@media screen and (max-width: 786px) {
+		font-size: 11rem;
+        font-weight: 400;
+	
+	}
+}
+
 h1,h2{
 	font-weight: 600;
 	font-size: 1.625rem;
+	
 }
 
 h3{
