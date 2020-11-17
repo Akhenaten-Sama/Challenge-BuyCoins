@@ -41,7 +41,7 @@ nav{
 	font-size: 2rem;
 	margin-right: 20px;
 	@media screen and (max-width: 786px) {
-	 transform:translateX(50vw);
+	 transform:translateX(40vw);
 		
 		
 	
@@ -122,6 +122,11 @@ nav{
 	border-bottom: solid 1px #eaecef;
 	margin-top:.5rem;
 	padding-left: 25%;
+	@media screen and (max-width: 786px) {
+		overflow: scroll;
+		
+	
+	}
 	
 	li{
 		margin-left:1.8rem;
