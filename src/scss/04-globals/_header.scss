@@ -124,6 +124,7 @@ nav{
 	padding-left: 25%;
 	@media screen and (max-width: 786px) {
 		overflow: scroll;
+		margin-left:5%;
 		
 	
 	}
@@ -148,10 +149,23 @@ hr{
 	position: absolute;
 	margin-left: 3rem;
 	
+
+	.profile-name > {
+
+		p{
+			@media screen and (max-width: 786px) {
+				display:none;
+		
+			
+			}
+		}
+		
+	}
 	@media screen and (max-width: 786px) {
 		display:flex;
 		position: relative;
 		align-items: center;
+		
 	
 	}
 }
