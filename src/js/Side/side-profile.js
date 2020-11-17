@@ -36,7 +36,7 @@ const Side = async() => {
     <img class='profile-img' src=${avatarUrl}>
     <div class='profile-name'>
     <h1>
-    <span class='block'>${name}</span>
+    <span class='block name'>${name}</span>
     <span class='block grey-text'>${login}</span>
     </h1>
     <p>${bio}</p>
