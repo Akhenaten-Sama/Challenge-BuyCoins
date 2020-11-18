@@ -3,10 +3,7 @@ nav{
 	width: auto;
 }
 
-.border{
 
-
-}
 .navbar {
 	color:rgb(248,255,255);
 	Background:rgb(36, 41, 46);	
@@ -117,11 +114,7 @@ nav{
 	width:  20px;
 }
 	
-.tabs-hr{
-	width:100vw !important;
-	margin: 0;
-	overflow: visible;
-}
+
 
 .sticky{
 	top:0 !important;
@@ -137,16 +130,28 @@ nav{
 	border-bottom: solid 1px #eaecef;
 	margin-top:.5rem;
 	padding-left: 25%;
+
+	@media screen and (max-width: 965px) {
+		padding-left: 3%;
+	
+	}
 	@media screen and (max-width: 786px) {
-		padding-left: 0%;
+		overflow-x: scroll;
+		max-width: 100%;
+		padding-left: 1%;
+		padding-right: 1%;
 		
 	
 	}
 	
 	li{
-		margin-left:1.8rem;
+		padding: 1rem 1rem;
 		font-size: 0.875rem;
+		border:0;
+		border-bottom:2px solid transparent;
 		color:rgb(36,41,46);
+		flex-shrink: 0;
+		display: block;
 	}
 }
 
@@ -162,7 +167,12 @@ hr{
 	
 	position: absolute;
 	margin-left: 3rem;
+	flex-shrink: 0;
 	
+	@media screen and (max-width: 965px) {
+		position: relative;
+	
+	};
 
 	.profile-name > {
 
@@ -226,9 +236,19 @@ position: relative;
 	margin-left:30% ;
 	margin-top:1rem;
 	margin-right: 20%;
+	
+
+	@media screen and (max-width: 965px) {
+		position: relative;
+		margin-left: 3%;
+	
+	}
+	
 	@media screen and (max-width: 786px) {
 		width: 90vw;
 		margin-left: 5%;
+		paddings-right: 5%;
+		overflow: hidden;
 	
 	}
 	.repo-name{
@@ -236,6 +256,10 @@ position: relative;
 	}
 }
 
+.line-2{
+	font-size: 12px;
+	color:#586069;
+}
 .repo-search{
 	width: 100%;
 	height: 1.9rem;
@@ -277,4 +301,12 @@ button{
 		background: #f3f3f3;
 	}
 	transition: all 0.3s;
+}
+
+
+.underline{
+border-bottom-color: salmon !important;
+font-weight: 600;
+//outline:1px dotted transparent;
+margin: 0 !important;
 }

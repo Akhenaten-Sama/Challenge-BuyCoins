@@ -12,7 +12,7 @@ const Side = async() => {
         <div class='sub-repo'>
         <div>
         <h3 class='repo-name'>${rep.node.name}</h3>
-        <p>${rep.node.description?rep.node.description:''}</p>
+        <p class='description'>${rep.node.description?rep.node.description:''}</p>
         <span class='line-2'>
         <span><div class='lang-color' style='background:${rep.node.languages.edges[0].node.color}'> </div>
         ${rep.node.languages.edges[0].node.name} </span>
@@ -46,10 +46,11 @@ const Side = async() => {
 
     <header>
     <ul class='tabs sticky'>
-    <li><i class="fa fa-book-open"></i>    Overview</li>
-    <li><i class="far fa-clipboard"></i>    Repositories 645</li>
-    <li>Projects</li>
-    <li>Packages</li>
+    
+    <li><i class="fa fa-book-open"></i> Overview</li>
+    <li class='underline'><i class="far fa-clipboard"></i> Repositories <span class='num'>22</span></li>
+    <li><i class="fas fa-poll"></i> Projects</li>
+    <li><i class="fas fa-cube"></i> Packages</li>
     </ul>
     <div class="repo border">
     <input class='repo-search' type='search' placeholder='Find a repository...'>
