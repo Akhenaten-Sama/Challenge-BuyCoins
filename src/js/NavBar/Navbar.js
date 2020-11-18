@@ -1,13 +1,24 @@
-const Navbar = () => {
+
+import {Github} from '../Apollo/apollo -graphql'
+
+
+const Navbar = async () => {
+    const myData = await Github()
+    const {name, bio,avatarUrl, login, repositories} = await Github()
     const img = "https://avatars2.githubusercontent.com/u/65839844?u=feed274b8c188865437b0f7e82976cf347c4cfa6&v=4"
-    function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
+        setTimeout(() => {
+            document.getElementById("hamicon").addEventListener('click', ()=>{
+                const x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+             })
+        }, 1);
+         
+        
+    
 	const template = `
 <nav class='navbar'>
 <div class='container'>
@@ -17,6 +28,10 @@ const Navbar = () => {
 <input type= 'search' placeholder='Search or jump to...' />
 </span>
 
+<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" id='hamicon' class="ham-icon" >
+    <i class="fa fa-bars"></i>
+  </a>
      <div class='links'>
      <ul class='nav-links'>
 
@@ -40,17 +55,21 @@ const Navbar = () => {
 
     
 <!-- Top Navigation Menu -->
-<div class="topnav">
-  <!-- Navigation links (hidden by default) -->
+<div class="sidenav">
+
   <div id="myLinks">
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+  
+<div><input class='search' type= 'search' placeholder='Search or jump to...' /><hr></div>
+  <div><a href="#news">Dashboard</a> <hr></div>
+  <div><a href="#news">Pull requests</a> <hr></div>
+  <div><a href="#news">Issues</a> <hr></div>
+  <div><a href="#news">MarketPlace</a> <hr></div>
+  <div><a href="#news">Explore</a> <hr></div>
+ <a href='#'> <img  class ='nav-img' src =${avatarUrl}>${name}</a>  
+    
+   
   </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+  
 </div>
      </nav>
     `;

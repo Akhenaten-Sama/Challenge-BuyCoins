@@ -14,7 +14,7 @@ console.log(body)
 const app =  async () => {
 
     body.innerHTML = `
-      ${NavBar()}
+      ${await NavBar()}
       ${Tab()}
        ${await Side()}
        ${await Repos()}

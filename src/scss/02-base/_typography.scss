@@ -1,5 +1,6 @@
 a {
-	color: lime;
+	color: white;
+	text-decoration: none;
 }
 
 h1{
@@ -46,4 +47,12 @@ h3,h4{
 	font-weight: 500;
 	display: inline-block;
 	min-width: 20px;
+}
+
+.tab-img{
+	width:30px;
+	height: 30px;
+	border-radius: 50%;
+	visibility: hidden !important;
+	
 }
