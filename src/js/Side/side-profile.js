@@ -3,7 +3,20 @@ import {Github} from '../Apollo/apollo -graphql'
 
 const Side = async() => {
     const {name, bio,avatarUrl, login, repositories} = await Github()
-  
+    setTimeout(() => {
+        var observer = new IntersectionObserver(function(entries) {
+            var x = document.getElementById("hi");
+            // no intersection with screen
+            entries[0].intersectionRatio === 0?x.style.display="flex"
+                :x.style.display="none";
+                
+            
+            
+        }, { threshold: [0,1] });
+        
+        observer.observe(document.querySelector(".profile-img"));
+    
+       }, 1);  
     setTimeout(() => {
         const repo = document.querySelector('.repo');
         repositories.edges.map(rep=> repo.innerHTML +=`
@@ -47,10 +60,14 @@ const Side = async() => {
     <header>
 
 
-    
+     <div class='hide'></div>
     <ul class='tabs sticky'>
-    <img class='tab-img' src=${avatarUrl}/ >
-    <h4>${login}</h4>
+    <div id='hi'>
+
+    <span><img class='tab-img' src=${avatarUrl}/ ></span>
+    <h4 >${login}</h4>
+    </div>
+    
     <li><i class="fa fa-book-open"></i> Overview</li>
     <li class='underline'><i class="far fa-clipboard"></i> Repositories <span class='num'>22</span></li>
     <li><i class="fas fa-poll"></i> Projects</li>

@@ -1,7 +1,7 @@
 
   
   #myLinks{
-    display:none;
+    display:block;
     grid-template-columns: 1fr;
     flex-direction: column;
     font-weight: 600;
@@ -9,8 +9,10 @@
     transition: 1s;
     @media screen and (min-width: 786px) {
       display:none;
-    
+    flex-shrink: 0;
     }
+   
+   
   
   }
 
@@ -20,7 +22,8 @@
     @media screen and (max-width: 786px) {
       visibility:visible;
       transform:translateX(-48vw);
-      position: static;
+      //position: absolute;
+      top:0;
 
     
     }
@@ -46,4 +49,12 @@
 	   border:solid 0.2px rgba(255, 255, 255, 0.3);
 	   background-color: rgb(36,41,46);
 	   color: #f3f3f3;
+  }
+
+  #sidenav{
+      display:none;
+    @media screen and (min-width: 786px) {
+      display:none;
+    flex-shrink: 0;
+    }
   }

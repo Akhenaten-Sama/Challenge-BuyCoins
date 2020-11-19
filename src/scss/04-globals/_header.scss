@@ -8,10 +8,12 @@ nav{
 	color:rgb(248,255,255);
 	Background:rgb(36, 41, 46);	
 	width: 100%;
+	overflow:visible;
 
 
 	.container{
 	display: flex;
+	flex-shrink: 0;
 	overflow: hidden;
 	flex-wrap: nowrap;
 	justify-content: space-between;
@@ -21,6 +23,10 @@ nav{
 	position: sticky;
 	top:0;
 	padding: 1rem;
+	@media screen and (max-width: 786px) {
+		position: relative;
+	
+	}
 	
 
 	}
@@ -40,6 +46,8 @@ nav{
 	margin-right: 20px;
 	@media screen and (max-width: 786px) {
 	 transform:translateX(40vw);
+	 position: relative;
+	 overflow: hidden;
 		
 		
 	
@@ -155,7 +163,28 @@ nav{
 	}
 }
 
+#hi{
 
+	display: none;
+	flex-shrink: 0;
+	padding-left: 8px !important;
+	padding-right: 8px !important;
+	transform: translateX(-15rem);
+	@media screen and (max-width: 786px) {
+
+		
+          display: none;
+	
+	}
+	
+
+}
+
+
+.hide{
+	height: 1px;
+	visibility: hidden;
+}
 hr{
 	border: 0;
 	height: 0;
@@ -171,14 +200,16 @@ hr{
 	
 	@media screen and (max-width: 965px) {
 		position: relative;
+		
 	
 	};
 
 	.profile-name > {
-
+position:absolute;
 		p{
 			@media screen and (max-width: 786px) {
 				display:none;
+				
 		
 			
 			}

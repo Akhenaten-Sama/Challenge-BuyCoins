@@ -8,7 +8,7 @@ const Navbar = async () => {
     const img = "https://avatars2.githubusercontent.com/u/65839844?u=feed274b8c188865437b0f7e82976cf347c4cfa6&v=4"
         setTimeout(() => {
             document.getElementById("hamicon").addEventListener('click', ()=>{
-                const x = document.getElementById("myLinks");
+                const x = document.getElementById("sidenav");
                 if (x.style.display === "block") {
                     x.style.display = "none";
                   } else {
@@ -16,9 +16,9 @@ const Navbar = async () => {
                   }
              })
         }, 1);
-         
+
+       
         
-    
 	const template = `
 <nav class='navbar'>
 <div class='container'>
@@ -55,7 +55,7 @@ const Navbar = async () => {
 
     
 <!-- Top Navigation Menu -->
-<div class="sidenav">
+<div id='sidenav' class="sidenav">
 
   <div id="myLinks">
   
