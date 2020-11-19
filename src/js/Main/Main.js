@@ -28,7 +28,7 @@ const Side = async() => {
          
         <div class='sub-repo'>
         <div>
-        <h3 class='repo-name'>${rep.node.name}</h3>
+        <a href=${rep.node.url}><h3 class='repo-name'>${rep.node.name}</h3> </a>
         <p class='description'>${rep.node.description?rep.node.description:''}</p>
         <span class='line-2'>
         <span><div class='lang-color' style='background:${rep.node.languages.edges[0].node.color}'> </div>

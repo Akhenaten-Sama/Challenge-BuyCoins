@@ -5,6 +5,7 @@ import {Github} from '../Apollo/apollo -graphql'
 const Navbar = async () => {
     const myData = await Github()
     const {name,avatarUrl,} = myData;
+    console.log(myData)
     const img = "https://avatars2.githubusercontent.com/u/65839844?u=feed274b8c188865437b0f7e82976cf347c4cfa6&v=4"
        
     //to ensure the dom paints before adding an event listener; we use a setTimeOut
@@ -37,10 +38,10 @@ const Navbar = async () => {
      <div class='links'>
      <ul class='nav-links'>
 
-    <li> Pull requests </li>
-    <li> Issues </li>
-    <li> Codespaces </li>
-    <li> Explore </li>
+    <li><a href='#'> Pull requests </a></li>
+    <li><a href='#'> Issues </a></li>
+    <li><a href='#'> Codespaces </a> </li>
+    <li><a href='#'> Explore </>a</li>
     </ul>
     </div>
 </div>
