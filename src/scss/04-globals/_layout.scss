@@ -96,8 +96,12 @@ position: relative;
 }
 
 .line-2{
+	display: flex;
 	font-size: 12px;
 	color:#586069;
+	min-width: 150%;
+	flex-wrap: nowrap;
+	flex-shrink: 0;
 }
 .repo-search{
 	width: 100%;
