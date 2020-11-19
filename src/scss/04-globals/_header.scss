@@ -138,6 +138,8 @@ nav{
 	border-bottom: solid 1px #eaecef;
 	margin-top:.5rem;
 	padding-left: 25%;
+	
+	
 
 	@media screen and (max-width: 965px) {
 		padding-left: 3%;
@@ -166,6 +168,13 @@ nav{
 #hi{
 
 	display: none;
+	
+	
+
+}
+
+.hi{
+	display: block !important;
 	flex-shrink: 0;
 	padding-left: 8px !important;
 	padding-right: 8px !important;
@@ -173,11 +182,9 @@ nav{
 	@media screen and (max-width: 786px) {
 
 		
-          display: none;
+          display: none !important;
 	
 	}
-	
-
 }
 
 
@@ -263,14 +270,14 @@ position: relative;
 }
 
 .repo{
-	width:65%;
+	width:60%;
 	margin-left:25% ;
 	margin-top:1rem;
-	margin-right: 20%;
+	margin-right: 30%;
 	
 
 	@media screen and (max-width: 965px) {
-		position: relative;
+		//position: relative;
 		margin-left: 3%;
 	
 	}

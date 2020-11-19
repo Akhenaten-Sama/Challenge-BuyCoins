@@ -7,8 +7,8 @@ const Side = async() => {
         var observer = new IntersectionObserver(function(entries) {
             var x = document.getElementById("hi");
             // no intersection with screen
-            entries[0].intersectionRatio === 0?x.style.display="flex"
-                :x.style.display="none";
+            entries[0].intersectionRatio === 0?x.classList.add('hi')
+                :x.classList.remove("hi")
                 
             
             
