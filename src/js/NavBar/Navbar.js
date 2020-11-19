@@ -41,7 +41,7 @@ const Navbar = async () => {
     <li><a href='#'> Pull requests </a></li>
     <li><a href='#'> Issues </a></li>
     <li><a href='#'> Codespaces </a> </li>
-    <li><a href='#'> Explore </>a</li>
+    <li><a href='#'> Explore <a/></li>
     </ul>
     </div>
 </div>
