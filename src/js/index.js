@@ -2,9 +2,7 @@ import "core-js/stable"
 import "regenerator-runtime"
 import '../scss/styles.scss'
 import NavBar from './NavBar/Navbar'
-import Tab from './Tabs/tabs'
-import Side from './Side/side-profile'
-import Repos from './Repositories/repos'
+import Main from './Main/Main'
 
 
 
@@ -15,9 +13,8 @@ const app =  async () => {
 
     body.innerHTML = `
       ${await NavBar()}
-      ${Tab()}
-       ${await Side()}
-       ${await Repos()}
+       ${await Main()}
+      
 
       `
 

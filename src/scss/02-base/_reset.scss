@@ -40,3 +40,24 @@ ul {
 	font-size: 1.25rem;
 	line-height:1,5rem;
 }
+
+
+button{
+	width:4.2rem;
+	height: 1.7rem;
+	background: white;
+	border: 0.5px solid #d8d8d6;
+	border-radius: 7px;
+	&:hover{
+		background: #f3f3f3;
+	}
+	transition: all 0.3s;
+}
+
+
+.underline{
+border-bottom-color: salmon !important;
+font-weight: 600;
+//outline:1px dotted transparent;
+margin: 0 !important;
+}

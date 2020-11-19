@@ -3,6 +3,8 @@ import {Github} from '../Apollo/apollo -graphql'
 
 const Side = async() => {
     const {name, bio,avatarUrl, login, repositories} = await Github()
+
+    //To ensure the dom paints before adding geeting aelement and adding an event listener; I use a setTimeOut
     setTimeout(() => {
         var observer = new IntersectionObserver(function(entries) {
             var x = document.getElementById("hi");
@@ -17,6 +19,8 @@ const Side = async() => {
         observer.observe(document.querySelector(".profile-img"));
     
        }, 1);  
+
+    // Dom must paint first.
     setTimeout(() => {
         const repo = document.querySelector('.repo');
         repositories.edges.map(rep=> repo.innerHTML +=`

@@ -4,9 +4,11 @@ import {Github} from '../Apollo/apollo -graphql'
 
 const Navbar = async () => {
     const myData = await Github()
-    const {name, bio,avatarUrl, login, repositories} = await Github()
+    const {name,avatarUrl,} = myData;
     const img = "https://avatars2.githubusercontent.com/u/65839844?u=feed274b8c188865437b0f7e82976cf347c4cfa6&v=4"
-        setTimeout(() => {
+       
+    //to ensure the dom paints before adding an event listener; we use a setTimeOut
+    setTimeout(() => {
             document.getElementById("hamicon").addEventListener('click', ()=>{
                 const x = document.getElementById("sidenav");
                 if (x.style.display === "block") {
@@ -65,7 +67,7 @@ const Navbar = async () => {
   <div><a href="#news">Issues</a> <hr></div>
   <div><a href="#news">MarketPlace</a> <hr></div>
   <div><a href="#news">Explore</a> <hr></div>
- <a href='#'> <img  class ='nav-img' src =${avatarUrl}>${name}</a>  
+ <a href='#'> <span style='display:inline-block; padding-right:0.5rem;'><img  class ='nav-img' src =${avatarUrl} /></span>${name}</a>  
     
    
   </div>
