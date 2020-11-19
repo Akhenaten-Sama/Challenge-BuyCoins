@@ -31,15 +31,15 @@ const Side = async() => {
         <a href=${rep.node.url}><h3 class='repo-name'>${rep.node.name}</h3> </a>
         <p class='description'>${rep.node.description?rep.node.description:''}</p>
         <span class='line-2'>
-        <span><div class='lang-color' style='background:${rep.node.languages.edges[0].node.color}'> </div>
-        ${rep.node.languages.edges[0].node.name} </span>
+        <span><div class='lang-color' style='background:${rep.node.languages.edges[0]?rep.node.languages.edges[0].node.color:""}'> </div>
+        ${rep.node.languages.edges[0]?rep.node.languages.edges[0].node.name:""} </span>
        <span> <i class="fas fa-code-branch"></i>  ${rep.node.forkCount}</span>
        <span> <i class="far fa-star"></i> ${rep.node.stargazerCount}</span>
        <span>Updated <relative-time datetime=${rep.node.updatedAt}></relative-time></span>
         </span>
         </div>
 
-        <button><i class="far fa-star"></i> Star</button>
+        <button style='display:flex'><span display='flex'><i class="far fa-star"></i> Star</span></button>
         </div>
         
         `)
