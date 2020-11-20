@@ -41,9 +41,12 @@ nav{
  line-height: 1.5;
  
 
+ 
+
+
  i{
-	font-size: 2rem;
-	margin-right: 20px;
+	font-size: 1.5rem;
+	margin-right: 15px;
 	@media screen and (max-width: 786px) {
 	 transform:translateX(40vw);
 	 position: relative;
