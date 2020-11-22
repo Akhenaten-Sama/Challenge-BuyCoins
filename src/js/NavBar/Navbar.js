@@ -68,7 +68,7 @@ const Navbar = async () => {
   <div><a href="#news">Issues</a> <hr></div>
   <div><a href="#news">MarketPlace</a> <hr></div>
   <div><a href="#news">Explore</a> <hr></div>
- <a href='#'> <span style='display:inline-block; padding-right:0.5rem;'><img  class ='nav-img' src =${avatarUrl} /></span>${name}</a>  
+ <a href='#'> <span style='display:inline-block; padding-right:0.5rem;'><img  class ='nav-img' src =${avatarUrl} /></span><span style="margin-top:-2rem;">${name}</span></a>  
     
    
   </div>
