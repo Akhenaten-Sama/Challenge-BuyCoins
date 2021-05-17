@@ -49,15 +49,18 @@ const Navbar = async () => {
 
     <div class='nav-group2'>
     <i class="far fa-bell"></i>
+    <div style="padding-right:10px; padding-left:10px;">
     <i class="fa fa-plus"></i>
     <i class="fas fa-caret-down"></i>
+    </div>
+    
     <img class='nav-img'  src=${img} />
     <i class="fas fa-caret-down"></i>
     </div>
     </div>
 
     
-<!-- Top Navigation Menu -->
+<!-- Mobile Navigation Menu -->
 <div id='sidenav' class="sidenav">
 
   <div id="myLinks">

@@ -10,6 +10,7 @@
 		"clean": "rm -rf dist/*"
 	},
 	"dependencies": {
+		"@github/g-emoji-element": "^1.1.5",
 		"@github/time-elements": "^3.1.1",
 		"apollo-boost": "^0.4.9",
 		"apollo-cache-inmemory": "^1.6.6",
@@ -27,7 +28,7 @@
 		"@babel/core": "^7.6.4",
 		"@babel/preset-env": "^7.6.3",
 		"node-sass": "^4.13.1",
-		"parcel-bundler": "^1.12.4",
+		"parcel-bundler": "^1.12.5",
 		"parcel-plugin-imagemin": "^3.0.0",
 		"parcel-plugin-svg-sprite": "^1.4.1"
 	}

@@ -1,5 +1,5 @@
 import {Github} from '../Apollo/apollo -graphql'
-
+import '@github/g-emoji-element'
 
 const Side = async() => {
     const {name, bio,avatarUrl, login, repositories} = await Github()
@@ -50,7 +50,12 @@ const Side = async() => {
      
     <section class='main' >
     <div class='profile'>
+    <div>
     <img class='profile-img' src=${avatarUrl}>
+    <div>
+    <g-emoji class="g-emoji" alias="smile" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png">😄</g-emoji></div>
+    </div>
+    
     <div class='profile-name'>
     <h1>
     <span class='block name'>${name}</span>

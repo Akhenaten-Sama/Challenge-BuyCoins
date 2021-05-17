@@ -100,8 +100,8 @@ nav{
 
 .nav-group2{
 	display:flex;
-	padding-top: 0.5rem;
-	padding-right: 2rem;
+	padding-top: 0.3rem;
+	padding-right: 1.5rem;
 
 	i.fa-bell{
 		@media screen and (max-width: 786px) {
@@ -123,10 +123,11 @@ nav{
 }
 
 .nav-img{
-	margin:left 5px;
+	margin-top:5px;
 	border-radius:50%;
 	height: 20px;
 	width:  20px;
+
 }
 	
 
