@@ -81,6 +81,7 @@ const Navbar = async () => {
      </nav>
     `;
 
+     //return html
 	return template;
 };
 

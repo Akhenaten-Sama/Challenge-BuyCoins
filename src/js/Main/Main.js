@@ -56,7 +56,7 @@ const Side = async() => {
     <div class='profile'>
     <div>
     <img class='profile-img' src=${avatarUrl}>
-    
+    </div>
     
     <div class='profile-name'>
     <h1>
@@ -72,6 +72,8 @@ const Side = async() => {
 
 
      <div class='hide'></div>
+
+     <!-- Sticky Header with Name -->
     <ul class='tabs sticky'>
     <div id='hi'>
 
@@ -79,6 +81,7 @@ const Side = async() => {
     <h4 >${login}</h4>
     </div>
     
+    <!-- Sub Header-->
     <li><i class="fa fa-book-open"></i> Overview</li>
     <li class='underline'><i class="far fa-clipboard"></i> Repositories <span class='num'>22</span></li>
     <li><i class="fas fa-poll"></i> Projects</li>
@@ -101,7 +104,7 @@ const Side = async() => {
     
     `
 
-
+    //return html
     return template
 }
 
