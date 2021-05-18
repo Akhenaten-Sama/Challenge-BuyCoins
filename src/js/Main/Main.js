@@ -4,11 +4,11 @@ import '@github/g-emoji-element'
 const Side = async() => {
     const {name, bio,avatarUrl, login, repositories} = await Github()
 
-    //To ensure the dom paints before adding geeting aelement and adding an event listener; I use a setTimeOut
+    //This is an async function, To ensure the dom paints before adding/getting elements and adding an event listener; I use a setTimeOut with 1 millisecond interval
     setTimeout(() => {
         var observer = new IntersectionObserver(function(entries) {
             var x = document.getElementById("hi");
-            // no intersection with screen
+            // no intersection with screen, remove class. intersection? add class
             entries[0].intersectionRatio === 0?x.classList.add('hi')
                 :x.classList.remove("hi")
                 
@@ -22,7 +22,11 @@ const Side = async() => {
 
     // Dom must paint first.
     setTimeout(() => {
+
+        //I use this to isolate our entry point
         const repo = document.querySelector('.repo');
+
+        //loop through each repo received from querying github, create a component and add component into the repo div, using the 
         repositories.edges.map(rep=> repo.innerHTML +=`
         <hr/>
          
@@ -52,9 +56,7 @@ const Side = async() => {
     <div class='profile'>
     <div>
     <img class='profile-img' src=${avatarUrl}>
-    <div>
-    <g-emoji class="g-emoji" alias="smile" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png">😄</g-emoji></div>
-    </div>
+    
     
     <div class='profile-name'>
     <h1>
@@ -84,6 +86,10 @@ const Side = async() => {
     </ul>
     <div class="repo border">
     <input class='repo-search' type='search' placeholder='Find a repository...'>
+
+
+    <!-- Injection Point For Repos, this will be my entry point for repos -->
+
     </div>
     </header>
       

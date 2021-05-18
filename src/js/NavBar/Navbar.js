@@ -4,11 +4,11 @@ import {Github} from '../Apollo/apollo -graphql'
 
 const Navbar = async () => {
     const myData = await Github()
-    const {name,avatarUrl,} = myData;
+    const {name,avatarUrl} = myData;
     console.log(myData)
     const img = "https://avatars2.githubusercontent.com/u/65839844?u=feed274b8c188865437b0f7e82976cf347c4cfa6&v=4"
        
-    //to ensure the dom paints before adding an event listener; we use a setTimeOut
+    //to ensure the dom paints before adding an event listener; I use a setTimeOut
     setTimeout(() => {
             document.getElementById("hamicon").addEventListener('click', ()=>{
                 const x = document.getElementById("sidenav");
@@ -46,14 +46,14 @@ const Navbar = async () => {
     </div>
 </div>
 
-
+<!-- "Icons part" -->
     <div class='nav-group2'>
     <i class="far fa-bell"></i>
-    <div style="padding-left:10px;">
+    <div style="padding-left:15px;">
     <i class="fa fa-plus"></i>
     <span class='new'></span>
     </div>
-  <div style="padding-left:10px; display:flex; flex-direction:row;">
+  <div style="padding-left:15px; display:flex; flex-direction:row;">
   <img  class='nav-img' src=${img} > 
     <span style="align-self:center; margin-left:5px;" class='new '></span>
     </div>
