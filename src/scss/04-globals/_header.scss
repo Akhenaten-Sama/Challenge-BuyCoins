@@ -101,7 +101,9 @@ nav{
 .nav-group2{
 	display:flex;
 	padding-top: 0.3rem;
-	padding-right: 1.5rem;
+	padding-right: 2.5rem;
+
+	
 
 	i.fa-bell{
 		@media screen and (max-width: 786px) {
@@ -209,3 +211,16 @@ hr{
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+
+.new{
+	display:inline-block !important;
+	vertical-align: middle;
+	width:0;
+	height:0;
+	content:"";
+	border-top-style: solid;
+	border-top-width: 4px;
+	border-right:4px solid transparent;
+	border-bottom: 0 solid transparent;
+	border-left:4px solid transparent;
+}

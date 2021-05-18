@@ -49,13 +49,14 @@ const Navbar = async () => {
 
     <div class='nav-group2'>
     <i class="far fa-bell"></i>
-    <div style="padding-right:10px; padding-left:10px;">
+    <div style="padding-left:10px;">
     <i class="fa fa-plus"></i>
-    <i class="fas fa-caret-down"></i>
+    <span class='new'></span>
     </div>
-    
-    <img class='nav-img'  src=${img} />
-    <i class="fas fa-caret-down"></i>
+  <div style="padding-left:10px; display:flex; flex-direction:row;">
+  <img  class='nav-img' src=${img} > 
+    <span style="align-self:center; margin-left:5px;" class='new '></span>
+    </div>
     </div>
     </div>
 
