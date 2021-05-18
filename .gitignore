@@ -2,7 +2,7 @@ node_modules
 dist
 .env
 .*
-!/.gitignore
+!/.gitignor
 !/.babelrc
 yarn-error.log
 yarn.lock
